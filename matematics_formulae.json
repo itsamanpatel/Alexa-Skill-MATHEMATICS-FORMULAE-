@@ -1,0 +1,772 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "maths hub",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "not having any doubt",
+                        "no doubt",
+                        "na",
+                        "nops",
+                        "not ",
+                        "no",
+                        "cancel it",
+                        "cancel"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "guide me",
+                        "help me",
+                        "help"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "stop it",
+                        "stop"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": [
+                        "home",
+                        "navigate to home"
+                    ]
+                },
+                {
+                    "name": "doubtIntent",
+                    "slots": [
+                        {
+                            "name": "question",
+                            "type": "QUESTION"
+                        }
+                    ],
+                    "samples": [
+                        "{question}",
+                        "how much {question}",
+                        "about {question}",
+                        "what is {question}"
+                    ]
+                },
+                {
+                    "name": "learnIntent",
+                    "slots": [
+                        {
+                            "name": "section",
+                            "type": "SECTION"
+                        }
+                    ],
+                    "samples": [
+                        "give me {section}",
+                        "give me some formulas from {section}",
+                        "learn from {section}",
+                        "{section}",
+                        "from {section}"
+                    ]
+                },
+                {
+                    "name": "yesIntent",
+                    "slots": [],
+                    "samples": [
+                        "more doubt",
+                        "having doubt",
+                        "yeah",
+                        "yes"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "QUESTION",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "l hospitals rule"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mean value theorem",
+                                "synonyms": [
+                                    "mvt",
+                                    "m.v.t."
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "rolles theorem"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "monotonic function"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "parametric form of rectangular hyperbola"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "standard equation of rectangular hyperbola"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "parametric form of hyperbola"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "standard equation of hyperbola"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "parametric form of ellipse"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "length of letus ractum of ellipse"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "length of letus ractum of parabola"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "standard equation of ellipse",
+                                "synonyms": [
+                                    "equation of ellipse"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "parametric form of parabola"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "equation of parabola",
+                                "synonyms": [
+                                    "standard equation of parabola"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "condition for line to touch the circle"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "equation of the tangent to the circle"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "general equation to the circle"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "equation to the circle"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "length of perpendicular"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "normal form of a straight line"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "intercept form of a straight line"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "slope form of a sraight line"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "general form of a staight line"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "condition for three points to be collinear"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "area of the triangle"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "incentre of the triangle"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "centroid of the triangle"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "two tan inverse x",
+                                "synonyms": [
+                                    "2 tan inverse x"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cos inverse x minus cos inverse y",
+                                "synonyms": [
+                                    "cos inverse x - cos inverse y"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sin inverse x minus sin inverse y",
+                                "synonyms": [
+                                    "sign inverse x minus sign inverse y",
+                                    "sin inverse x - sin inverse y"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cos inverse x plus cos inverse y",
+                                "synonyms": [
+                                    "cos inverse x + cos inverse y"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sin inverse x plus sin inverse y",
+                                "synonyms": [
+                                    "sign inverse x plus sign inverse y",
+                                    "sin inverse x + sin inverse y"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tan inverse x minus tan inverse y",
+                                "synonyms": [
+                                    "tan inverse x - tan inverse y"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tan inverse x plus tan inverse y",
+                                "synonyms": [
+                                    "tan inverse x + tan inverse y"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cosec inverse x plus sec inverse x",
+                                "synonyms": [
+                                    "cosec inverse x + sec inverse x"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tan inverse x plus cot inverse x",
+                                "synonyms": [
+                                    "tan inverse x + cot inverse x"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sin inverse x plus cos inverse x",
+                                "synonyms": [
+                                    "sign inverse x plus cos inverse x",
+                                    "sin inverse x + cos inverse x"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sin a cos b",
+                                "synonyms": [
+                                    "sign a cos b",
+                                    "sin a into cos b"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cos a cos b",
+                                "synonyms": [
+                                    "cos a into cos b"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sin a sin b",
+                                "synonyms": [
+                                    "sign a sign b",
+                                    "sin a into sin b"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cos a minus cos b",
+                                "synonyms": [
+                                    "cos a - cos b"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cos a plus cos b",
+                                "synonyms": [
+                                    "cos a + cos b"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sin a minus sin b",
+                                "synonyms": [
+                                    "sign a minus sign b",
+                                    "sin a - sin b"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sin a plus sin b",
+                                "synonyms": [
+                                    "sign a plus sign b",
+                                    "sin a + sin b"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tan three a",
+                                "synonyms": [
+                                    "tan 3a"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cos three a",
+                                "synonyms": [
+                                    "cos 3a"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sin three a",
+                                "synonyms": [
+                                    "sin 3a"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tan two a",
+                                "synonyms": [
+                                    "tan 2a"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cos two a",
+                                "synonyms": [
+                                    "cos 2a"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sin two a",
+                                "synonyms": [
+                                    "sign two a",
+                                    "sin 2a"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tan a minus b",
+                                "synonyms": [
+                                    "tan a - b"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tan a plus b",
+                                "synonyms": [
+                                    "tan a + b"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cos a minus b",
+                                "synonyms": [
+                                    "\t  cos a - b"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cos a plus b",
+                                "synonyms": [
+                                    "\t  cos a + b"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sin a minus b",
+                                "synonyms": [
+                                    "sign a minus b",
+                                    "sin a - b"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sin a plus b",
+                                "synonyms": [
+                                    "sign a plus b",
+                                    "sin a + b"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "a square minus b square",
+                                "synonyms": [
+                                    "a square - b square"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "a plus b whole square",
+                                "synonyms": [
+                                    "whole square of a plus b",
+                                    "whole square of a + b",
+                                    "a + b whole square"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "skew symmetric matrix"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "symmetric matrix"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "a into b whole transpose",
+                                "synonyms": [
+                                    "ab whole transpose",
+                                    "whole transpose of a multiply by b",
+                                    "whole transpose of a into b",
+                                    "a.b. whole transpose"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "a plus b whole transpose",
+                                "synonyms": [
+                                    "whole transpose of a + b",
+                                    "whole transpose of a plus b",
+                                    "a +b whole transpose"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "a transpose whole transpose",
+                                "synonyms": [
+                                    "whole transpose of a transpose"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "matrix",
+                                "synonyms": [
+                                    "matrices"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "binomial theorem",
+                                "synonyms": [
+                                    "x plus a whole power n"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "n c r",
+                                "synonyms": [
+                                    "ncr",
+                                    "n c base r"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "combination"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "n p r",
+                                "synonyms": [
+                                    "npr",
+                                    "n p base r"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "permutation"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "n eth term of harmonic progression",
+                                "synonyms": [
+                                    "nth term of harmonic progression",
+                                    "n eth term of hp",
+                                    "n eth term of the hp",
+                                    "n eth term of H.P."
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "harmonic progression",
+                                "synonyms": [
+                                    "H.P."
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sum of n terms of the G.P.",
+                                "synonyms": [
+                                    "sum of n terms of gp",
+                                    "sum of n terms of the gp",
+                                    "sum of n terms of geometric progression"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "n eth term of the G.P.",
+                                "synonyms": [
+                                    "nth term of the gp",
+                                    "n eth term of gp",
+                                    "n eth term of the gp",
+                                    "n eth term of the geometric progression"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "geometric progression",
+                                "synonyms": [
+                                    "gp",
+                                    "G.P."
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sum of n terms of an A.P.",
+                                "synonyms": [
+                                    "sum of n terms of the ap",
+                                    "sum of n terms of an ap",
+                                    "sum of n terms of the A.P.",
+                                    "sum of n terms of an arithmetic progression"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "n eth term of A.P.",
+                                "synonyms": [
+                                    "nth term of ap",
+                                    "n eth term of an ap",
+                                    "n eth term of the ap",
+                                    "n eth term of arithmetic progression",
+                                    "n eth term of A.P."
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "arithmetic progression",
+                                "synonyms": [
+                                    "ap",
+                                    "A.P."
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "product of roots",
+                                "synonyms": [
+                                    "product of roots of equation",
+                                    "product of root"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sum of roots",
+                                "synonyms": [
+                                    "sum of root",
+                                    "sum of roots of equation"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "omega cube",
+                                "synonyms": [
+                                    "omega to the power three"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "one plus omega plus omega square",
+                                "synonyms": [
+                                    "one plus omega plus omega square"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "omega into omega square",
+                                "synonyms": [
+                                    "omega dot omega square",
+                                    "omega multiply by omega square"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "roots of quadratic equation",
+                                "synonyms": [
+                                    "the roots of quadratic equations"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "SECTION",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "three diamentional coordinate geometry",
+                                "synonyms": [
+                                    " three d geometry"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "vector algebra",
+                                "synonyms": [
+                                    "vector"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "integration",
+                                "synonyms": [
+                                    "integral"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "differenciation",
+                                "synonyms": [
+                                    "differencial"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "probability"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "conic section",
+                                "synonyms": [
+                                    "conic"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "trigonometry"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "algebra"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
